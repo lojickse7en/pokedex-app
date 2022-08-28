@@ -10,12 +10,12 @@ const BottomBarStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: end;
-    grid-template: 30px;
+    gap: 30px;
     padding-right: 50px;
   }
   .bottom-btn {
     display: flex;
-    grid-template: 15px;
+    gap: 15px;
     color: white;
     cursor: pointer;
   }

@@ -55,6 +55,71 @@ const PokemonCardStyles = styled.div`
     bottom: 10%;
     z-index: 2;
   }
+
+  .show > img {
+    filter: drop-shadow(2px 4px 12px black);
+    max-width: 360px;
+  }
+  .stat-container-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: -5%;
+    padding: 0 10px;
+    width: 110%;
+    height: 65px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #f0501d 40%, black 40%);
+  }
+  .image-title {
+    width: 45px;
+    min-height: 60px;
+    margin-right: 10px;
+  }
+  .pokeball-title {
+    width: 40px;
+    margin-left: auto;
+    filter: invert(1);
+  }
+  .stats-left,
+  .stats-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 20px;
+  }
+  .stats-left > p,
+  .stats-right > p {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+    border-bottom: 1px solid #90979f38;
+  }
+
+  .base-stats {
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+  }
+  .base-stats > div {
+    text-align: center;
+    width: 100%;
+  }
+  .stats {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 45px;
+    background: #5a5a58;
+    color: white;
+  }
+  .stats:nth-child(1),
+  .stats:nth-child(2) {
+    border-bottom: 1px solid white;
+  }
 `;
 
 export default function PokemonCard({
@@ -83,7 +148,7 @@ export default function PokemonCard({
         {isShown && (
           <div className="show">
             <div className="stat-container-title">
-              <img src={image} alt={name} className="image-tile" />
+              <img src={image} alt={name} className="image-title" />
               <p style={{ width: '180px', color: 'black' }}>No. {id}</p>
               <p>{name}</p>
               <img src={pokeball} alt="pokeball" className="pokeball-title" />
@@ -111,7 +176,7 @@ export default function PokemonCard({
                 ))}
               </div>
               <div>
-                {statsName.map((stats) => (
+                {stats.map((stats) => (
                   <p className="stats">{stats}</p>
                 ))}
               </div>
