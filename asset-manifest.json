@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/pokedex-app/static/js/main.82e546b2.js",
+    "static/media/obg.jpg": "/pokedex-app/static/media/obg.bd7cc66d13cc7d87d520.jpg",
+    "static/media/pokeballcolor.png": "/pokedex-app/static/media/pokeballcolor.27a58f21d49110d03604.png",
+    "static/media/pokeball.png": "/pokedex-app/static/media/pokeball.f3b7c73826c7105a09bd.png",
+    "index.html": "/pokedex-app/index.html",
+    "main.82e546b2.js.map": "/pokedex-app/static/js/main.82e546b2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.82e546b2.js"
+  ]
+}
