@@ -5,9 +5,9 @@ import PokeList from './components/PokeList';
 function App() {
   return (
     <>
-      <TopBar />
+      {/* <TopBar /> */}
       <PokeList />
-      <BottomBar />
+      {/* <BottomBar /> */}
     </>
   );
 }
